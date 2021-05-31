@@ -1,0 +1,38 @@
+/* START GLOBAL */
+body {
+  background-color: #F1F0EC;
+}
+/* END GLOBAL */
+
+
+/* START NAVIGATION */
+.navigation{
+display: flex;
+}
+.logo{
+  padding-top: 35px;
+  padding-left: 150px;
+  height: 50px;
+}
+.navigation-links{
+  display: flex;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-right: 150px;
+}
+.nav-item{
+  padding-right: 50px;
+}
+.nav-item:hover {
+  text-decoration: underline;
+  transition: all 0.3 ease;
+}
+/* END NAVIGATION */
+
+/* START ABOUT APPLICATION */
+.about-app{
+  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+/* END START APPLICATION */
