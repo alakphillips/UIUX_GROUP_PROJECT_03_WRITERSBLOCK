@@ -30,9 +30,34 @@ display: flex;
 /* END NAVIGATION */
 
 /* START ABOUT APPLICATION */
+.about{
+  display: inline-block;
+  text-align: center;
+}
 .about-app{
   padding-top: 200px;
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
-/* END START APPLICATION */
+#cta{
+  justify-content: center;
+}
+#iphone-mockups{
+  display: block;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.appicons{
+  display: inline-block;
+  justify-content: center;
+  padding-right: 30px;
+}
+#appstore {
+  height: 50px;
+}
+#playstore {
+  height: 50px;
+}
+/* END ABOUT APPLICATION */
