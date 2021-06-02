@@ -2,8 +2,16 @@
 body {
   background-color: #F1F0EC;
 }
+nav {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+letter-spacing: 0.1em;
+}
 /* END GLOBAL */
-
 
 /* START NAVIGATION */
 .navigation{
@@ -24,10 +32,119 @@ display: flex;
   padding-right: 50px;
 }
 .nav-item:hover {
+  color: #5C5C5C;
   text-decoration: underline;
   transition: all 0.3 ease;
 }
 /* END NAVIGATION */
+
+/* START TEXT SCROLL FEATURE */
+.container {
+   width: 100%;
+   height: 50px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-left: -25%;
+   margin-top: -25px;
+}
+.scroller {
+   height: 50px;
+   line-height: 50px;
+   float: left;
+   margin-left: 5px;
+   overflow: hidden;
+}
+.scroller span {
+   display: block;
+   text-align: left;
+   font-size: 200%;
+   font-family: Roboto;
+   font-style: bold;
+   letter-spacing: 0.1em;
+   color: #000;
+}
+.scroller .inner {
+   -webkit-animation: scroll 10s 1 ease-out;
+   -moz-animation: scroll 10s 1 ease-out;
+   animation: scroll 10s 1 ease-out;
+   -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+}
+.blue {
+   -webkit-animation: color 0.25s 1 linear;
+   -moz-animation: color 0.25s 1 linear;
+   animation: color 0.25s 1 linear;
+
+      -webkit-animation-delay: 8s;
+   -moz-animation-delay: 8s;
+   animation-delay: 8s;
+
+      -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+
+}
+.blueb {
+   -webkit-animation: color 0.25s 1 linear;
+   -moz-animation: color 0.25s 1 linear;
+   animation: color 0.25s 1 linear;
+
+         -webkit-animation-delay: 8.25s;
+   -moz-animation-delay: 8.25s;
+   animation-delay: 8.25s;
+
+      -webkit-animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+}
+@-webkit-keyframes color {
+   0%  {color: #000;}
+   100% {color: #2c90c6;}
+}
+@-moz-keyframes color {
+   0%  {color: #000;}
+   100% {color: #2c90c6;}
+}
+@keyframes color {
+   0%  {color: #000;}
+   100% {color: #2c90c6;}
+}
+@-webkit-keyframes scroll {
+   11%  {margin-top: 0px;}
+   22%  {margin-top: 0px;}
+   33%  {margin-top: -50px;}
+   44%  {margin-top: -50px;}
+   55%  {margin-top: -100px;}
+   66%  {margin-top: -100px;}
+   77%  {margin-top: -150px;}
+   88%  {margin-top: -150px;}
+   100% {margin-top: -150px;}
+}
+@-moz-keyframes scroll {
+   11%  {margin-top: 0px;}
+   22%  {margin-top: 0px;}
+   33%  {margin-top: -50px;}
+   44%  {margin-top: -50px;}
+   55%  {margin-top: -100px;}
+   66%  {margin-top: -100px;}
+   77%  {margin-top: -150px;}
+   88%  {margin-top: -150px;}
+   100% {margin-top: -150px;}
+}
+@keyframes scroll {
+   11%  {margin-top: 0px;}
+   22%  {margin-top: 0px;}
+   33%  {margin-top: -50px;}
+   44%  {margin-top: -50px;}
+   55%  {margin-top: -100px;}
+   66%  {margin-top: -100px;}
+   77%  {margin-top: -150px;}
+   88%  {margin-top: -150px;}
+   100% {margin-top: -150px;}
+}
+/* END TEXT SCROLL FEATURE */
 
 /* START ABOUT APPLICATION */
 .about{
@@ -39,14 +156,12 @@ display: flex;
   display: inline-block;
   justify-content: center;
 }
-#cta{
-  justify-content: center;
-}
 #iphone-mockups{
   display: block;
-  margin-top: -50px;
+  margin-top: -100px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 150px;
+  padding-bottom: 50px;
   width: 50%;
 }
 .appicons{
