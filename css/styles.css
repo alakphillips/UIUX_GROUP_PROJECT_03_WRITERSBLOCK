@@ -246,6 +246,17 @@ li {
 #feature-copy-03{
   margin-left: 350px;
 }
+.image-gallery {
+  display: flex;
+  justify-content: center;
+}
+.image-item {
+  padding-top: 75px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 /* END FEATURE SECTION */
 
 /* START FAQ SECTION */
@@ -330,6 +341,13 @@ li {
 }
 .panel {
   display: none;
+}
+.contact-us {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 200px;
 }
 /* END FAQ SECTION */
 
@@ -440,5 +458,33 @@ li {
 .active {
   background-color: #000;
   color: white;
+}
+.feature-mockups {
+ visibility: hidden;
+}
+.feature-item{
+display: inline-block;
+}
+.feature-copy{
+  justify-content: center;
+  width: 30%;
+}
+#feature-copy-01{
+  padding: 20px;
+}
+#feature-copy-02{
+  padding:20px;
+}
+#feature-copy-03{
+  padding: 20px;
+}
+.FAQ{
+  padding-top: 100px;
+  padding-left: 5px;
+  padding-right: 30px;
+}
+.contact-us {
+  padding-top: 75px;
+  padding-bottom: 50px;
 }
 /* NOTE: END MOBILE ABOUT */
