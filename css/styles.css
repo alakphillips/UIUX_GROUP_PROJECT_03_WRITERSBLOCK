@@ -353,7 +353,7 @@ li {
 
 /* START MOBILE CSS */
 @media only screen and (max-width: 600px) {
-  /* NOTE: START MOBILE NAVIGATION */
+
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -364,9 +364,6 @@ li {
 .navigation-links {
   visibility: hidden;
 }
-  /* NOTE: END MOBILE NAVIGATION */
-
-  /* NOTE: START MOBILE ABOUT */
 .about{
   display: flex;
   flex-direction:column;
@@ -487,4 +484,4 @@ display: inline-block;
   padding-top: 75px;
   padding-bottom: 50px;
 }
-/* NOTE: END MOBILE ABOUT */
+/* END MOBILE CSS */
